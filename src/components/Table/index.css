@@ -1,0 +1,40 @@
+.iconContainer {
+  width: 40px;
+}
+
+.imgDogContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.imgDogContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.imageDetailContainer {
+  width: 200px;
+  height: 200px;
+}
+
+
+.imageDetailContainer img{
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.detailRowContainer {
+  display: flex;
+}
+
+.dogInfosContainer {
+  margin-left: 50px;
+}
+
+.fieldTitle {
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,83 @@
+.mainImageContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)),
+    url('/src/img/surf.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableMainContainer {
+  width: 95%;
+  margin: auto;
+  border-radius: 6px;
+  position: relative;
+  bottom: 50px;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 14%), 0 6px 30px 5px rgb(0 0 0 / 12%),
+    0 8px 10px -5px rgb(0 0 0 / 20%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.tableContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.welcomeMessageContainer {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+}
+
+.exitContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.exitContainer:hover {
+  cursor: pointer;
+}
+
+.categoriesContainer {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.categoryItemContainer {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.categoryItemContainer:hover {
+  cursor: pointer;
+  border: 1px solid lightsalmon;
+  background-color: lightsalmon;
+  color: white;
+}
+
+.selected {
+  border: 1px solid lightsalmon;
+  background-color: lightsalmon;
+  color: white;
+}

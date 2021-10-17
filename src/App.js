@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HomePage from './views/homepage/index';
+import LoginPage from './views/loginPage/index';
+import { connect } from 'react-redux';
+import TableComponent from './components/Table/index';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import '@devexpress/dx-react-grid-bootstrap4/dist/dx-react-grid-bootstrap4.css';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentUser: null,
+    };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.user !== this.props.user) {
+      this.setState({
+        currentUser: this.props.user.currentUser,
+      });
+    }
+  }
+
+  render() {
+    const { currentUser } = this.state;
+    return <div>{currentUser ? <HomePage /> : <LoginPage />}</div>;
+  }
 }
+const mapStateToProps = (state) => ({
+  user: state.user.currentUser,
+});
 
-export default App;
+export default connect(mapStateToProps)(App);

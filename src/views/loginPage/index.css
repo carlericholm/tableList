@@ -1,0 +1,36 @@
+.loginMainContainer {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.327), rgba(0, 0, 0, 0.3)),
+  url('/src/img/startRace.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  background-color: white;
+  width: 25%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.titleContainer h3 {
+  color: gray;
+}
+
+.nameContainer {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.submitContainer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
