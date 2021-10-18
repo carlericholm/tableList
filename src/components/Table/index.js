@@ -96,6 +96,7 @@ class TableComponent extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.sports !== this.props.sports) {
+      this.sports = [];
       this.props.sports.sports.forEach((element) => {
         this.sports.push({
           name: element.attributes.name,
@@ -108,6 +109,7 @@ class TableComponent extends React.Component {
       this.setState({ rows: this.sports, columns: 'sports' });
     }
     if (prevProps.dogs !== this.props.dogs) {
+      this.dogs = [];
       this.props.dogs.dogs.forEach((element) => {
         this.dogs.push({
           name: element.name,
