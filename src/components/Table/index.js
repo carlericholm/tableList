@@ -150,7 +150,7 @@ class TableComponent extends React.Component {
             <RowDetailState />
             <IntegratedSorting />
             <Table cellComponent={customCellToRender} />
-            <TableHeaderRow showSortingControls />
+            <TableHeaderRow  />
             <TableRowDetail contentComponent={customRowDetailToRender} />
             <PagingPanel />
           </Grid>

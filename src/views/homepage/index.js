@@ -1,5 +1,6 @@
 import React from 'react';
 import TableComponent from '../../components/Table/index';
+import TableDogs from '../../components/Table/TableDogs';
 import { connect } from 'react-redux';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import './index.css';
@@ -88,7 +89,8 @@ class HomePage extends React.Component {
             </div>
           </div>
           <div className='tableContainer'>
-            <TableComponent />
+            {chosenCategory === 'dogs' && <TableDogs />}
+            {chosenCategory === 'sports' && <TableComponent />}
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const apiRoads = [
   },
   {
     name: 'sports',
-    url: 'https://sports.api.decathlon.com/sports',
+    url: 'https://sports.api.decathlon.com/sports?has_icon=true',
   },
 ];
 
